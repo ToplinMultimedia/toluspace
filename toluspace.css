@@ -54,7 +54,7 @@
   display: none;
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
       justify-content: space-between;
       z-index: 1;
@@ -168,12 +168,15 @@
     height: 100%;
     margin-top: 80px;
 }
-@media (max-width:600px){
+@media (max-width:768px){
     .content{
     display: block;
     }
     .top h1{
-      font-size: 80px;
+      font-size: 60px;
+    }
+    .mid{
+      margin: -60px;
     }
 }
 .section1{
@@ -261,14 +264,28 @@
   .section1{
     display: block;
   }
+  .left h1{
+    font-size: 70px;
+  }
+  .sm{
+    margin: -60px;
+  }
 }
 @media (max-width:600px){
   .section2{
     display: block;
   }
+  .left h1{
+    font-size: 70px;
+  }
+  
 }
 @media (max-width:600px){
   .section3{
     display: block;
+  }
+  .left h1{
+    font-size: 50px;
+    padding-left: -50px;
   }
 }
