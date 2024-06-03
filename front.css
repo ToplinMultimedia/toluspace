@@ -1,0 +1,114 @@
+
+body{
+  background: #fafaf8;
+  animation: fadeBackground 6s infinite;
+  animation-fill-mode: forwards;
+  }
+  @keyframes fadeBackground {
+    from { background-color: #b0b0b0; }
+    to { background-color: #444445; }
+  }
+.box-model {
+    margin: 0 auto;
+    width: 80%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85; 
+  }
+  @media (max-width: 980px) {
+    .box-model {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .box-model div {
+    height: auto;
+  }
+  .box-model .left {
+    color: #FFFFFF;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("seg/new\ tops.jpg");
+    overflow: hidden;
+  }
+  .box-model .right {
+    padding: 10px;
+    padding-left: 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+  @media (max-width: 980px) {
+    .box-model .right {
+      width: 100%;
+    }
+  }
+  .box-model .right img{
+    width: 100px;
+    cursor: pointer;
+  }
+  .box-model .right h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(16, 16, 54);
+  }
+  #tt{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(16, 16, 54);
+  }
+  .box-model .right h3{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(142, 142, 145);
+  }
+  #btn1{
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, rgb(13, 13, 56) 3%, rgb(13, 13, 56) 100%);
+    border-radius: 30px;
+    border: 1px solid rgb(13, 13, 56);
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px rgb(13, 13, 56);
+}
+  #btn1:hover{
+    box-shadow: 3px 8px 22px rgba(13,13,56);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+  p{
+    color: rgb(116, 115, 115);
+  }
+  .fa{
+    color: rgb(173, 172, 172);
+    margin: 3px 2px;
+  }
+  span {
+    opacity: 0;
+    filter: blur(4px);
+}
+span:nth-child(1) {
+    animation: fade-in 0.5s
+    0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+    100%{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
